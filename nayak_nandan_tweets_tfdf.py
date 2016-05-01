@@ -1,12 +1,20 @@
+#import all modules
 import MapReduce
 import sys
 import re
 import string
 
-
+#global variables
 mr = MapReduce.MapReduce()
+doc1="nayak_nandan_tweet_data.txt"
 tweet_count=0
-word_dict={}
+presidentList=['hillary','clinton','bernie','sanders','ted','cruz','kasich','donald','trump']
+
+
+#define all functions
+def sendReducer(word,tweet_count):
+    sub_list=[tweet_count,1]        #Keep track of the tweet and term frequency of the word
+    mr.emit_intermediate(word,sub_list)
 
 def mapper(each_tweet):
     # Mapper code goes in here
@@ -25,7 +33,7 @@ def mapper(each_tweet):
     
     word_dict={}
     for word in text:        
-        if word not in word_dict:
+        if word in presidentList and word not in word_dict: 
             total=0
             for i in range(len(text)):
                 if(word==text[i]):
@@ -41,7 +49,8 @@ def reducer(key, list_of_values):
     mr.emit((key,len(list_of_values),list_of_values))
 
 
+#main funtion
 if __name__ == '__main__':
-    inputdata = open(sys.argv[1])
+    inputdata = open(doc1)
     mr.execute(inputdata, mapper, reducer)
 
