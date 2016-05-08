@@ -40,7 +40,7 @@ The Project report contains the results from Twitter Sentiment Analysis and also
 <li>api_secret = "(Enter api secret)"</li>
 <li>access_token_key = "(Enter your access token key here)"</li>
 <li>access_token_secret = "(Enter your access token secret here)”</li>
-</ul>
+</ol>
 <li>Run the following and make sure you see data flowing and that no errors occur</li></ol>
 <strong><em>python twitterstream.py > nayak_nandan_tweet_data.txt</em></strong>
 This command pipes the output to a file. Stop the program with Ctrl-C once the required amount of data is accumulated.
@@ -69,7 +69,7 @@ For this part, the MapReduce.py is used as framework and tweets_tfdf.py as a bas
 <li>Executing the code for the problem:
 <strong><em>python nayak_nandan_tweets_tfdf.py</em></strong>
 <li>The above python file reads one file</li>
-<li>nayak_nandan_tweet_data.txt: The tweet data file created earlier<li/>
+<li>nayak_nandan_tweet_data.txt: The tweet data file created earlier</li>
 </ul>
 <strong>Sample Output:</strong>
 <a href="https://github.com/NandanNayak/US-Presidential-election-prediction-from-Twitter-sentiments-using-MapReduce-framework-and-ArcMap/blob/master/nayak_nandan_output_tfdf.txt">nayak_nandan_output_tfdf.txt</a>
@@ -82,9 +82,9 @@ python nayak_nandan_tweets_location.py
 <li>nayak_nandan_tweet_data.txt: The tweet data file created earlier</li>
 </ul>
 
-<strong>Sample Output</strong>
+<strong>Sample Output : </strong>
 <a href="https://github.com/NandanNayak/US-Presidential-election-prediction-from-Twitter-sentiments-using-MapReduce-framework-and-ArcMap/blob/master/nayak_nandan_output_location.txt">nayak_nandan_output_location.txt</a>
-</ol>
+
 
 
 <h3>Algorithm:</h3>
