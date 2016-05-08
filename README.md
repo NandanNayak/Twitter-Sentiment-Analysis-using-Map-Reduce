@@ -125,10 +125,13 @@ newstring = mystring.encode('utf-8').translate(None, string.punctuation)</li>
 <p>["all", 1, [[3, 1]]] # This shows that term “all” has df 1 and occurs in tweet 3 with tf 1.</p></li>
 </ul>
 
-<h3> Derive location of each tweet<h3>
+<h3> Derive location of each tweet</h3>
 <ul>
 <li>Read the input file – nayak_nandan_tweet_data.txt</li>
 <li>Read each tweet, if it has location enabled, perform the data processing as done before and then record the location against each presidential candidate and the no. of tweets from that location</li>
 <li>From the total tweets, calculate the fraction of tweets commented on each presidential candidate</li>
 <li>Display the results on the comment share</li>
 </ul>
+
+<h3>Final Result on ArcMap</h3>
+<img src="https://github.com/NandanNayak/US-Presidential-election-prediction-from-Twitter-sentiments-using-MapReduce-framework-and-ArcMap/blob/master/ResultOnArcMap.png" />
