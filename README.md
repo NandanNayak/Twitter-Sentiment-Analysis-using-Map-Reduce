@@ -8,3 +8,5 @@
 
 nayak_nandan_tweet_data.txt - https://drive.google.com/folderview?id=0BxdLbeUsfPFvS1ZBMDh1OFU0bzA&usp=sharing
 All the python files need the about text file as input data.
+
+<img src="https://github.com/NandanNayak/US-Presidential-election-prediction-from-Twitter-sentiments-using-MapReduce-framework-and-ArcMap/blob/master/Project_Report_And_Results.pdf" />
