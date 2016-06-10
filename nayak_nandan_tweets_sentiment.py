@@ -135,7 +135,6 @@ if __name__ == '__main__':
 
     sizes=[]
     labels=[]
-    negt=[]
     for tup in tempList:
         labels.append(tup[0])
         sizes.append(tup[1])
