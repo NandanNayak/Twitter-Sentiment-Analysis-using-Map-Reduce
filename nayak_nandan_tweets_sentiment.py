@@ -3,13 +3,14 @@ import sys
 import string
 import re
 import MapReduce
+import matplotlib.pyplot as plt
 
 #declare all global variables
 mr = MapReduce.MapReduce()
 scores = {}
 sentiment={}
 tweet_count=0
-doc1="AFINN-111.txt "
+doc1="AFINN-111.txt"
 doc2="nayak_nandan_tweet_data.txt"
 doc3="results.txt"
 presidentList=['hillary','clinton','bernie','sanders','ted','cruz','kasich','donald','trump']
@@ -42,6 +43,7 @@ def fillCommentShare(myDict):
         count+=myDict[eachPrez][pos]
     for eachPrez in myDict:
         vote=float(myDict[eachPrez][pos])/float(count)*100
+        vote=float("{0:.2f}".format(vote))
         commentShare[eachPrez]=vote
         
 
@@ -127,15 +129,34 @@ if __name__ == '__main__':
     mr.execute(tweet_data, mapper, reducer)
     
     fillCommentShare(presidentDict)
-    print presidentDict
-    #print commentShare
+    
     tempList=sorted(commentShare.items(),key=lambda(k,v):(-v,k))
-    print
-    print 
-    print "*****************************************************"
-    print "US Presidential Forecast (based on positive comments)"
-    print "*****************************************************"
-    for prez in tempList:
-       print "%s : %.2f%%"%(prez[0],prez[1])
+
+
+    sizes=[]
+    labels=[]
+    negt=[]
+    for tup in tempList:
+        labels.append(tup[0])
+        sizes.append(tup[1])
+    colors=["pink","magenta","yellow","orange","green"]
+
+    plt.pie(sizes,labels=labels,autopct="%.2f%%",startangle=-45,colors=colors)
+    plt.axis("equal")
+    plt.title("US Presidential Election Forecast (Vote Share based on positive comments)")
+    plt.show()
+
+    
+
+
+    
+
+
+
+
+
+
+
+    
     
 
