@@ -61,6 +61,7 @@ A python library called MapReduce.py that implements the MapReduce programming m
 
 <strong>Sample Output</strong>
 <a href="https://github.com/NandanNayak/US-Presidential-election-prediction-from-Twitter-sentiments-using-MapReduce-framework-and-ArcMap/blob/master/nayak_nandan_output_sentiment_scores.txt">nayak_nandan_output_sentiment_scores.txt</a>
+
 <strong>Visualization</strong>
 <img src="https://github.com/NandanNayak/US-Presidential-election-prediction-from-Twitter-sentiments-using-MapReduce-framework-and-ArcMap/blob/masters/ElectionPrediction.png" />
 
