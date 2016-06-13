@@ -57,7 +57,7 @@ A python library called MapReduce.py that implements the MapReduce programming m
 
 <p>The above file reads two files:
 <li><em>AFINN-111.txt</em>: AFINN-111.txt contains a list of pre-computed sentiment scores. Each line in the file contains a word or phrase followed by a tab separated sentiment score. </li>
-<li>nayak_nandan_tweet_data.txt: The tweet data file created earlier.</li></ul></p>
+<li>nayak_nandan_tweet_data.txt: The tweet data file created earlier</li></ul></p>
 
 <strong>Sample Output</strong>
 <a href="https://github.com/NandanNayak/US-Presidential-election-prediction-from-Twitter-sentiments-using-MapReduce-framework-and-ArcMap/blob/master/nayak_nandan_output_sentiment_scores.txt">nayak_nandan_output_sentiment_scores.txt</a>
